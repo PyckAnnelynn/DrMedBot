@@ -1,0 +1,33 @@
+<!-- /templates/index.html -->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='img/botface.png') }}">
+		<title>Web Chat Bot For Dr. MedBot</title>
+	</head>
+	<body>
+
+        <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}">
+        <div class="container">
+            <div class="content">
+                <div class="chat-container">
+                   <!-- chat messages -->
+                </div>
+                <form id="target">
+                    <input class="input" id="input_message" type="text" value="" placeholder="Enter Data" autofocus/>
+                  <input type="submit" hidden>
+                </form>
+            </div>
+        </div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="{{ url_for('static', filename='custom.js')}}"></script>
+	</body>
+</html>
